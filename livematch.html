@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Image Containers with Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        .container img {
+            width: 45%;
+            max-width: 150px;
+            border-radius: 5px;
+        }
+
+        .container p {
+            margin: 0;
+            padding: 0 10px;
+            text-align: center;
+            font-size: 16px;
+            flex: 1;
+        }
+
+        /* Responsive design */
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+
+            .container img {
+                width: 30%;
+                max-width: 120px;
+            }
+
+            .container p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div><b><h2>LIVE SPORT MATCH</h2></b></div>
+    
+    <a href="https://cnm-tsl.otteravision.com/cnm/tsl/tsl.m3u8" class="container">
+        <img src="https://via.placeholder.com/150" alt="Image 1">
+        <p>VS</p>
+        <img src="https://via.placeholder.com/150" alt="Image 2">
+    </a>
+
+    <a href="https://z02.ubtvfans.com/live/rx3/1085/19c856d334244d7aa1b8354af98d9465/index.m3u8" class="container">
+        <img src="https://via.placeholder.com/150" alt="Image 3">
+        <p>VS</p>
+        <img src="https://via.placeholder.com/150" alt="Image 4">
+    </a>
+
+    <a href="http://dcdn.bdixsports.live:1935/event/event1.stream/playlist.m3u8" class="container">
+        <img src="https://via.placeholder.com/150" alt="Image 5">
+        <p>VS</p>
+        <img src="https://via.placeholder.com/150" alt="Image 6">
+    </a>
+     <a href="https://dai.google.com/ssai/event/DMQqL8fcTMSuzlFPztxXtA/master.m3u8" class="container">
+        <img src="https://via.placeholder.com/150" alt="Image 5">
+        <p>VS</p>
+        <img src="https://via.placeholder.com/150" alt="Image 6">
+    </a>
+    <a href="https://dash2.antik.sk/live/test_esp2ktvapps_uhd/playlist.m3u8" class="container">
+        <img src="https://via.placeholder.com/150" alt="Image 5">
+        <p>VS</p>
+        <img src="https://via.placeholder.com/150" alt="Image 6">
+    </a>
+    <a href="https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8" class="container">
+        <img src="https://via.placeholder.com/150" alt="Image 5">
+        <p>VS</p>
+        <img src="https://via.placeholder.com/150" alt="Image 6">
+    </a>
+</body>
+</html>
